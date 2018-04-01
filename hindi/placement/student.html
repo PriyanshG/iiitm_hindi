@@ -534,31 +534,67 @@ jQuery(document).ready(function() {
 
 
 
-              <div class="item-page" itemscope itemtype="https://schema.org/Article">
-	<meta itemprop="inLanguage" content="en-GB" />
-	
-		
+              <div id="system-message-container">
+	</div>
 
-										
-<div class="icons">
+
+              <div class="login">
 	
-					<div class="btn-group pull-right">
-				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <span class="icon-cog"></span><span class="caret"></span> </a>
-								<ul class="dropdown-menu">
-											
-																<li class="email-icon"> <a href="/index.php/component/mailto/?tmpl=component&amp;template=beez5&amp;link=5b9e18e68ccd7c1f9ae1f52a17eaea04f3685675" title="Email this link to a friend" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;" rel="nofollow"><span class="icon-envelope"></span>ईमेल करें</a> </li>
-														</ul>
+		<div class="login-description">
+	
+			छात्रों को प्लेसमेंट के लिए यहां पंजीकरण करना आवश्यक है:	
+		
+		</div>
+	
+	<form action="/index.php/placement/student?task=user.login" method="post" class="form-validate form-horizontal well">
+
+		<fieldset>
+												<div class="control-group">
+						<div class="control-label">
+							<label id="username-lbl" for="username" class="required">
+	उपयोगकर्ता नाम<span class="star">&#160;*</span></label>
+						</div>
+						<div class="controls">
+							<input type="text" name="username" id="username" value="" class="validate-username required" size="25" required aria-required="true" autofocus />						</div>
+					</div>
+																<div class="control-group">
+						<div class="control-label">
+							<label id="password-lbl" for="password" class="required">
+	पासवर्ड<span class="star">&#160;*</span></label>
+						</div>
+						<div class="controls">
+							<input type="password" name="password" id="password" value="" class="validate-password required" size="25" maxlength="99" required aria-required="true" />						</div>
+					</div>
+							
+			
+						<div  class="control-group">
+				<div class="control-label"><label>याद रखना</label></div>
+				<div class="controls"><input id="remember" type="checkbox" name="remember" class="inputbox" value="yes"/></div>
 			</div>
-		
-	</div>
-						
-	
-	<div style="text-align: center;" ><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><h2> कार्य प्रगति पर है|</h2>
-	</div>
-				
-	
-							</div>
+			
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn btn-primary">
+						लॉगिन करें					</button>
+				</div>
+			</div>
 
+							<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY2hyb25vZm9ybXMmY2hyb25vZm9ybT1wbGFjZW1lbnRfZm9ybQ==" />
+						<input type="hidden" name="d8d8b9f27245dd3b192ebd36b75f58b9" value="1" />		</fieldset>
+	</form>
+</div>
+<div>
+	<ul class="nav nav-tabs nav-stacked">
+		<li>
+			<a href="/index.php/placement/student?view=reset">
+			क्या आप अपना पासवर्ड भूल गए?</a>
+		</li>
+		<li>
+			<a href="/index.php/placement/student?view=remind">
+			अपना उपयोगकर्ता नाम भूल गए?</a>
+		</li>
+			</ul>
+</div>
 
                 
 
